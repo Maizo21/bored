@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="bored.png" type="image/x-icon" />
+
+    <title>Bored?</title>
+  </head>
+  <body>
+    <main>
+      <h1>Bored?</h1>
+      <section class="random">
+        <div class="random-container">
+          <p>Press the button to get a random activity</p>
+          <button id="random">Random</button>
+        </div>
+      </section>
+
+      <section class="specific">
+        <div class="specific-container">
+          <p>Press the button to get an activity</p>
+          <div class="btn-container">
+            <button id="education">education</button>
+            <button id="recreational">recreational</button>
+            <button id="social">social</button>
+            <button id="diy">diy</button>
+            <button id="charity">charity</button>
+            <button id="cooking">cooking</button>
+            <button id="relaxation">relaxation</button>
+            <button id="music">music</button>
+            <button id="busywork">busywork</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="result" style="opacity: 0">
+        <div class="activity-container">
+          <p>Activity</p>
+          <p class="activity"></p>
+          <small class="participants"> </small>
+          <small class="type"> </small>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
