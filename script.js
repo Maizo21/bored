@@ -12,7 +12,6 @@ const getActivity = (e) => {
   fetch(query)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       document.querySelector(".activity").innerHTML = data.activity;
       document.querySelector(".type").innerHTML = `Type: ${data.type}`;
       document.querySelector(
