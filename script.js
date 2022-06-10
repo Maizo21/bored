@@ -7,7 +7,7 @@ const getActivity = (e) => {
   let query =
     e.target.id == "random"
       ? `https://www.boredapi.com/api/activity/`
-      : `https://www.boredapi.com/api/activity/?type=${e.target.id}/`;
+      : `https://www.boredapi.com/api/activity?type=${e.target.id}`;
 
   fetch(query)
     .then((response) => response.json())
