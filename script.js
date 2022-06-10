@@ -7,11 +7,12 @@ const getActivity = (e) => {
   let query =
     e.target.id == "random"
       ? `https://www.boredapi.com/api/activity/`
-      : `https://www.boredapi.com/api/activity/?type=${e.target.id}/`;
+      : `https://www.boredapi.com/api/activity/?type=${e.target.id}`;
 
   fetch(query)
     .then((response) => response.json())
     .then((data) => {
+      console.log(data);
       document.querySelector(".activity").innerHTML = data.activity;
       document.querySelector(".type").innerHTML = `Type: ${data.type}`;
       document.querySelector(
